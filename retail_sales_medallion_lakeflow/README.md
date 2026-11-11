@@ -5,7 +5,7 @@ An end-to-end retail sales ETL pipeline on Azure Databricks, built with Lakeflow
 <img width="1267" height="710" alt="image" src="https://github.com/user-attachments/assets/ecc70d79-bd09-4718-8d16-900633aef83c" />
 
 # Table of Contents
-- Business Problem
+- $ Business Problem $
 - Architecture
 - Pipeline Lineage
 - Tech Stack
@@ -26,6 +26,10 @@ Goal: build a repeatable, managed pipeline that preserves the raw data, standard
 
 # Architecture
 sales.csv (Unity Catalog Volume) → Bronze (raw, traceable) → Silver (cleaned, validated) → Gold (business aggregates) → Databricks SQL / dashboards / BI tools
+
+
+# Pipeline Lineage
+
 
 # Layer	Purpose	Key actions
 Bronze	Preserve source data	Load CSV, keep original values, add ingestion metadata
@@ -54,15 +58,17 @@ Synthetic retail sales dataset: 1,506 rows × 33 columns, with intentionally inj
 The grain is one sales line per row. Order ID alone is not unique, because one order can contain multiple product lines.
 
 # Repository Structure
+
 ├── README.md
-├── data/                      # sample dataset
+├── data/                       # sample dataset
 ├── pipeline/
 │   ├── bronze/bronze_transformation.sql
 │   ├── silver/silver_transformation.sql
 │   └── gold/gold_transformation.sql
-├── validation/                # reconciliation queries
-├── docs/                      # case study, DQ rules, review answers
-└── images/                    # architecture and screenshots
+├── validation/                 # reconciliation queries
+├── docs/                       # case study, DQ rules, review answers
+└── images/                     # architecture and screenshots
+
 # Layer Details
 # Bronze
 Reads the CSV from a Unity Catalog Volume: TODO: /Volumes/<catalog>/<schema>/<volume>/sales.csv
