@@ -5,3 +5,16 @@ An end-to-end retail sales ETL pipeline on Azure Databricks, built with Lakeflow
 <img width="1267" height="710" alt="image" src="https://github.com/user-attachments/assets/ecc70d79-bd09-4718-8d16-900633aef83c" />
 
 # Table of Contents
+- Business Problem
+- Architecture
+- Pipeline Lineage
+- Tech Stack
+- Dataset
+- Repository Structure
+- Layer Details
+- Data Quality Rules
+- Reconciliation
+- How to Run
+- Business Requirements Coverage
+- Key Learnings
+- Future Improvements
