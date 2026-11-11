@@ -5,7 +5,7 @@ An end-to-end retail sales ETL pipeline on Azure Databricks, built with Lakeflow
 <img width="1267" height="710" alt="image" src="https://github.com/user-attachments/assets/ecc70d79-bd09-4718-8d16-900633aef83c" />
 
 # Table of Contents
-- $ Business Problem $
+- Business Problem 
 - Architecture
 - Pipeline Lineage
 - Tech Stack
@@ -94,7 +94,7 @@ Auditability	Raw data is always retained in Bronze
 Details: docs/data_quality_rules.md
 
 # Reconciliation
-Check	Result
+# Check	# Result
 Source CSV rows	1,506
 Bronze rows	TODO
 Silver rows (trusted)	TODO
@@ -124,7 +124,7 @@ Why raw data is preserved in Bronze for traceability
 Flagging vs. rejecting records
 Why Order ID is an unsafe duplicate key
 Declarative pipelines with data-quality expectations and lineage
-Future Improvements
+# Future Improvements
 Daily file arrival with Auto Loader and incremental processing
 Separate customer and product dimension tables
 Alerts and monitoring on data-quality metrics
