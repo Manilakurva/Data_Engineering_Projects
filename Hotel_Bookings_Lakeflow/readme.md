@@ -1,6 +1,7 @@
 # Hotel Booking Analytics Platform: Medallion Architecture with Lakeflow Spark Declarative Pipelines
 
 An end-to-end hotel booking data engineering pipeline built on Azure Databricks using Lakeflow Spark Declarative Pipelines (SQL) and the Medallion Architecture (Bronze → Silver → Gold).
+![Uploading image.png…]()
 
 This project transforms raw hotel booking data into clean, validated, and business-ready datasets. It includes data ingestion, data cleaning, validation, duplicate handling, data quality tracking, reconciliation, and business reporting through Gold tables and dashboards.
 
