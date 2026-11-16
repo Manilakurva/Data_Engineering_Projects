@@ -1,0 +1,8 @@
+# 1. Data Reconciliation Overview
+Reconciliation ensures every source record loaded into the pipeline is accounted for across layers—whether
+it was successfully cleaned, moved to a rejected table due to data quality issues, or dropped as an exact duplicate.
+
+# The Reconciliation 
+Formula$$\text{Bronze Rows} = \text{Clean Rows} + \text{Rejected Rows} + \text{Duplicate Rows}$$
+
+# Reference vs. Actual Numbers
